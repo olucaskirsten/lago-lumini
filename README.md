@@ -48,3 +48,9 @@ Depois acesse `http://localhost:8000`.
 - Lotes simplificados para duas categorias gerais + bloco de atendimento.
 - Implantação com nova thumbnail e lightbox anotado.
 - Botão externo do Google Maps removido.
+
+## Atualização 30/09/2026
+- Novos previews e imagens expandidas dos dois cards de lotes.
+- Imagem de território atualizada na seção “Natureza que amplia a experiência”.
+- FAQ ampliado visualmente e atualizado com a copy integral fornecida no documento “Alterações Lumini”.
+- Instagram oficial adicionado ao rodapé.

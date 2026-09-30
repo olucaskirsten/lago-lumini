@@ -2418,3 +2418,67 @@ body.menu-open .site-header {
     width: 22px;
   }
 }
+
+/* 30/09 — atualização de FAQ, lotes e rodapé */
+.footer-contact .footer-instagram {
+  display: inline-block;
+  margin-top: 0;
+  font-size: inherit;
+  opacity: 1;
+  color: rgba(255, 255, 255, .84);
+  text-decoration: none;
+}
+
+.faq-section {
+  padding-block: clamp(88px, 9vw, 148px);
+}
+
+.faq-grid {
+  align-items: start;
+}
+
+.faq-list {
+  border-top-color: rgba(16, 47, 36, .22);
+}
+
+.faq-item button span {
+  max-width: 92%;
+  line-height: 1.35;
+}
+
+.faq-item.is-open .faq-answer > p {
+  max-width: 860px;
+  line-height: 1.62;
+}
+
+@media (min-width: 1024px) {
+  .faq-grid {
+    grid-template-columns: minmax(280px, .68fr) minmax(0, 1.32fr);
+    gap: clamp(56px, 7vw, 110px);
+  }
+
+  .faq-section .section-copy {
+    position: sticky;
+    top: calc(var(--header-h) + 34px);
+  }
+
+  .faq-item button {
+    min-height: 68px;
+    font-size: .96rem;
+  }
+
+  .faq-item.is-open .faq-answer > p {
+    padding-bottom: 22px;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq-section {
+    padding-block: 72px;
+  }
+
+  .faq-item button {
+    min-height: 66px;
+  }
+}
