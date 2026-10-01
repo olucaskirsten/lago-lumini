@@ -2510,7 +2510,7 @@ body.menu-open .site-header {
 }
 
 .footer-icon-button i {
-  color: #6d9b3c !important;
+  color: var(--green-950) !important;
   font-size: 18px;
   line-height: 1;
   display: block;
