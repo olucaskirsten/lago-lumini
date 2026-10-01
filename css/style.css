@@ -2420,14 +2420,6 @@ body.menu-open .site-header {
 }
 
 /* 30/09 — atualização de FAQ, lotes e rodapé */
-.footer-contact .footer-instagram {
-  display: inline-block;
-  margin-top: 0;
-  font-size: inherit;
-  opacity: 1;
-  color: rgba(255, 255, 255, .84);
-  text-decoration: none;
-}
 
 .faq-section {
   padding-block: clamp(88px, 9vw, 148px);
@@ -2480,5 +2472,54 @@ body.menu-open .site-header {
 
   .faq-item button {
     min-height: 66px;
+  }
+}
+
+
+/* 01/10 — footer com botões de contato minimalistas */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.footer-icon-button {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--forest);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+  transition: transform .28s var(--ease), box-shadow .28s var(--ease), background-color .28s var(--ease), color .28s var(--ease);
+}
+
+.footer-icon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+}
+
+.footer-icon-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline-offset: 3px;
+}
+
+.footer-icon-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  .footer-socials {
+    gap: 10px;
+  }
+  .footer-icon-button {
+    width: 44px;
+    height: 44px;
   }
 }
